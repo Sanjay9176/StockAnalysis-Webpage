@@ -5,7 +5,7 @@ export default function FirstSection() {
     const navigate = useNavigate()
     return (
         <>
-            <section className="bg-[linear-gradient(135deg,_#1e211d_20%,_#273036_45%,_#111827_95%)] text-[#89e74e] bg-no-repeat bg-cover bg-center pt-[80px] pb-[16px] ">
+            <section className="bg-[linear-gradient(135deg,_#1e211d_20%,_#273036_45%,_#111827_95%)] text-[#89e74e] bg-no-repeat bg-cover bg-center min-h-screen pt-[80px] pb-[16px]">
                 <div className="grid grid-cols-1 lg:grid-cols-[50%_auto] items-start">
                     <div className="flex flex-col items-start justify-start pt-[25px] px-4 space-y-8 lg:px-8 lg:space-y-10">
                         <div className="leading-tight w-full text-[30px] lg:text-[40px]">

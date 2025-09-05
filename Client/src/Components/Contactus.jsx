@@ -1,100 +1,76 @@
-import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaUserGraduate } from "react-icons/fa6";
-import { FaGithubSquare } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-export default function Contactus() {
-    let contactusdetail = ([
-        {
-            name: 'Sanjay Kumar Purohit',
-            email: 'sanjayrajgurupurohit@gmail.com',
-            Linkedin: 'linkedin.com/in/sanjaypurohit9',
-            linkedinhref: 'https://www.linkedin.com/in/sanjaypurohit9',
-            github: 'github.com/Sanjay9176',
-            githubhref: 'https://github.com/Sanjay9176',
-            leetcode: 'leetcode.com/u/sanjay9176',
-            leetcodehref: 'https://leetcode.com/u/sanjay9176/',
-            para: '(MERN STACK DEVELOPER)'
-        },
-        {
-            name: 'Priyank Davve',
-            email: 'priyankdave169@gmail.com',
-            Linkedin: 'linkedin.com/in/priyankdave169',
-            linkedinhref: 'https://www.linkedin.com/in/priyankdave169/',
-            github: 'github.com/PriyankDave16',
-            githubhref: 'https://github.com/PriyankDave16',
-            leetcode: 'leetcode.com/u/Priyank169',
-            leetcodehref: 'https://leetcode.com/u/Priyank169/',
-            para: '(DATA ANALYTICS)'
-        },
-        {
-            name: 'Shrishti',
-            email: 'srishtijain506@gmail.com',
-            Linkedin: 'linkedin.com/in/shrishti-nandawat',
-            linkedinhref: 'https://www.linkedin.com/in/shrishti-nandawat ',
-            github: 'github.com/Shrishti044',
-            githubhref: 'https://github.com/23f1000173',
-            leetcode: 'leetcode.com/u/Shrishti_44',
-            leetcodehref: 'https://leetcode.com/u/Shrishti_44/',
-            para: '(DATA SCIENCE)'
-        }
-    ])
-    return (
-        <section className="bg-[#0b0b0b] py-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full h-auto gap-10 md:gap-4 px-4 ">
-                {contactusdetail.map((items, i) => (
-                    <div className="text-white flex flex-col justify-start items-center md:items-start mt-0 md:mt-[50px] gap-4 text-base lg:ml-[100px] " key={i}>
-                        <h1 className="flex flex-col items-center text-center text-[20px] font-semibold hover:text-[#89e74e] transition-colors duration-200">
-                            <FaUserGraduate />
-                            {items.name}
-                            <p className="text-[16px] hover:text-[#89e74e] transition-colors duration-200">
-                                {items.para}
-                            </p>
-                        </h1>
-                        <div className="flex flex-col items-center md:items-start gap-3 mt-2">
-                            <a
-                                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${items.email}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-3 hover:text-[#89e74e] transition-colors duration-200"
-                            >
-                                <MdEmail />
-                                {items.email}
-                            </a>
-                            <a
-                                href={items.linkedinhref}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-3 hover:text-[#89e74e] transition-colors duration-200"
-                            >
-                                <FaLinkedin />
-                                {items.Linkedin}
-                            </a>
-                            <a
-                                href={items.githubhref}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-3 hover:text-[#89e74e] transition-colors duration-200"
-                            >
-                                <FaGithubSquare />
-                                {items.github}
-                            </a>
-                            <a
-                                href={items.leetcodehref}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-3 hover:text-[#89e74e] transition-colors duration-200"
-                            >
-                                <SiLeetcode />
-                                {items.leetcode}
-                            </a>
-                        </div>
+import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
+export default function ContactUs() {
+  const contactDetails = {
+    email: 'sanjayrajgurupurohit@gmail.com',
+    phone: '6382608836',
+    location: 'Chennai, Tamil Nadu, India'
+  };
 
+  return (
+    <section className="bg-[#1e211d] py-12 flex justify-center">
+      <div className="bg-[#1e211d] rounded-lg w-full max-w-5xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-10">
+          <h1 className="text-3xl md:text-4xl font-bold mb-3 text-white">Contact Us</h1>
+          <p className="text-gray-400 mb-6 max-w-xl mx-auto text-sm md:text-base">
+            Any questions or remarks? Just write us a message!
+          </p>
+          <div className="flex justify-center">
+            <a
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contactDetails.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#89e74e] text-black px-6 py-3 rounded-md font-semibold text-base hover:bg-opacity-80 transition-colors duration-200"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <div className="bg-[#e0f7e0] py-10 px-6 rounded-lg shadow-inner">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 text-center">
 
-                    </div>
-                ))}
+            <div className="flex flex-col items-center">
+              <a
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contactDetails.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 text-sm hover:text-[#89e74e] transition-colors duration-200 flex flex-col items-center"
+              >
+                <div className="bg-[#89e74e] text-black rounded-full p-5 mb-3">
+                  <MdEmail className="text-2xl" />
+                </div>
+                <h2 className="text-lg font-bold mb-1 text-black">EMAIL US</h2>
+                {contactDetails.email}
+              </a>
             </div>
-        </section>
-    )
+
+            <div className="flex flex-col items-center">
+              <a 
+                href={`tel:${contactDetails.phone}`}
+                className="text-gray-600 text-sm hover:text-[#89e74e] transition-colors duration-200 flex flex-col items-center"
+              >
+                <div className="bg-[#89e74e] text-black rounded-full p-5 mb-3">
+                  <FaPhoneAlt className="text-2xl" />
+                </div>
+                <h2 className="text-lg font-bold mb-1 text-black">CALL US</h2>
+                {contactDetails.phone}
+              </a>
+            </div>
+
+            <div className="flex flex-col items-center">
+              <div className="bg-[#89e74e] text-black rounded-full p-5 mb-3">
+                <FaMapMarkerAlt className="text-2xl" />
+              </div>
+              <h2 className="text-lg font-bold mb-1 text-black">OUR LOCATION</h2>
+              <p className="text-gray-600 text-sm">
+                {contactDetails.location}
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
