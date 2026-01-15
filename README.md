@@ -1,59 +1,59 @@
 📈 Stock Analysis Web Application
+————————————————————————
+
 Overview
+Stock Analysis Web Application is a full-stack MERN-based platform designed to analyze real-time and historical stock market data through a secure, responsive, and visually engaging interface. The application allows users to visualize stock trends, compare two stocks side-by-side, and explore market performance using optimized APIs and modern UI techniques, including Three.js-powered interactive visuals.
 
-Stock Analysis Web Application is a full-stack MERN-based web platform designed to help users analyze real-time and historical stock market data through an intuitive, responsive, and secure interface. The application enables users to visualize stock trends, compare two stocks side-by-side, and explore market performance with optimized data handling and modern UI enhancements, including Three.js-powered interactive visuals.
+The project emphasizes secure authentication, efficient data handling, and seamless frontend-backend integration, making it a production-ready stock analytics solution.
 
-The project focuses on secure authentication, efficient API integration, and clean frontend-backend architecture, making it a production-ready stock analytics dashboard.
+Key Features
 
-Features
-
-Secure Authentication System – JWT-based login & signup with encrypted passwords and protected routes.
-
-Real-Time Stock Analysis – Fetches and displays live stock prices and key market metrics.
-
-Historical Data Visualization – Analyze past stock performance using charts and data-driven insights.
-
-Stock Comparison Dashboard – Compare two different stocks side-by-side within a single unified view.
-
-Interactive UI & Visuals – Enhanced user experience using Three.js for dynamic visual components.
-
-Responsive Design – Fully optimized for desktop, tablet, and mobile devices.
-
-Optimized API Handling – Efficient data fetching and rendering for smooth performance.
-
-Clean MERN Architecture – Seamless integration between frontend and backend.
+• Secure authentication using JWT with encrypted passwords and protected routes
+• Real-time stock price analysis with live market data
+• Historical stock performance visualization
+• Side-by-side stock comparison in a single dashboard
+• Interactive UI components enhanced with Three.js
+• Fully responsive design for desktop and mobile devices
+• Optimized API calls for smooth performance
+• Clean and scalable MERN architecture
 
 Technology Stack
-Category	Technology
-Frontend	React (Vite)
-Styling	Tailwind CSS
-3D Graphics	Three.js
-Backend	Node.js, Express.js
-Database	MongoDB (Mongoose ODM)
-Authentication	JWT, bcrypt.js
-API Handling	Axios
+
+Frontend
+React (Vite), Tailwind CSS, Three.js, Axios, React Router DOM
+
+Backend
+Node.js, Express.js
+
+Database
+MongoDB with Mongoose ODM
+
+Authentication & Security
+JWT (JSON Web Tokens), bcrypt.js
+
 Installation
 
-Before running the project locally, ensure you have the following installed:
+Before running the project locally, make sure the following are installed:
 
-Node.js (LTS)
+• Node.js (LTS)
+• MongoDB (Local or Atlas)
+• Git
 
-MongoDB (Local or Atlas)
+Clone the repository and move into the project directory:
 
-Git
-
-Then follow these steps:
-
-# Clone the repository
 git clone https://github.com/Sanjay9176/StockAnalysis-Webpage.git
 cd StockAnalysis-Webpage
 
+
 Backend Setup
+
+Navigate to the server directory and install dependencies:
+
 cd server
 npm install
 
 
-Create a .env file inside the server directory:
+Create a .env file inside the server folder and add the following variables:
 
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
@@ -66,15 +66,20 @@ Start the backend server:
 npm start
 
 
-👉 Backend will run at: http://localhost:5000
+Backend runs at:
+http://localhost:5000
 
 Frontend Setup
+
+Navigate to the client directory and install dependencies:
+
 cd client
 npm install
 npm run dev
 
 
-👉 Frontend will run at: http://localhost:5173
+Frontend runs at:
+http://localhost:5173
 
 How to Run the Project
 
@@ -84,57 +89,46 @@ Run the backend server
 
 Run the frontend development server
 
-Register a new account or login
+Register a new user account or login
 
-Search stocks, view analytics, and compare performance
+Search stocks, analyze trends, and compare performance
 
 Authentication Flow
 
-User credentials are encrypted using bcrypt
-
-JWT token is generated on successful login
-
-Token is used to protect private routes
-
-Unauthorized users are restricted from accessing secured pages
+• User passwords are encrypted using bcrypt
+• JWT token is generated on successful login
+• Tokens secure protected routes
+• Unauthorized users cannot access private pages
 
 Stock Comparison Module
 
-Select any two stocks
-
-View both stock trends side-by-side
-
-Analyze price movement and performance metrics
-
-Designed for clarity and faster decision-making
+• Select any two stocks
+• View both stocks in a side-by-side layout
+• Analyze trends, prices, and performance metrics
+• Designed for clarity and faster decision-making
 
 Future Enhancements
 
-Advanced technical indicators (RSI, MACD, Moving Averages)
-
-Watchlist & favorites feature
-
-Stock price alerts and notifications
-
-AI-based market trend prediction
-
-Cloud deployment and CI/CD pipeline
+• Technical indicators such as RSI, MACD, and Moving Averages
+• Watchlist and favorites feature
+• Price alerts and notifications
+• AI-based market trend prediction
+• Cloud deployment with CI/CD pipeline
 
 
 Learning Outcomes
 
-Practical MERN stack development
+• Hands-on MERN stack development
+• Secure authentication and authorization
+• Real-time API integration
+• Responsive UI design with Tailwind CSS
+• Practical usage of Three.js in real-world applications
 
-Secure authentication & authorization
+Code Repository
 
-Efficient API integration and async handling
+https://github.com/Sanjay9176/StockAnalysis-Webpage
 
-Responsive UI design with Tailwind CSS
+Sanjay Kumar Purohit
 
-Real-world usage of Three.js in web applications
-
-Code
-
-👉 https://github.com/Sanjay9176/StockAnalysis-Webpage
-
-[Sanjay Kumar Purohit]
+Aspiring Full Stack Web Developer
+Chennai, Tamil Nadu, India
