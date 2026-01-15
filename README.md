@@ -1,134 +1,129 @@
-📈 Stock Analysis Web Application
-————————————————————————
+# 📈 Stock Analysis Web Application
 
-Overview
-Stock Analysis Web Application is a full-stack MERN-based platform designed to analyze real-time and historical stock market data through a secure, responsive, and visually engaging interface. The application allows users to visualize stock trends, compare two stocks side-by-side, and explore market performance using optimized APIs and modern UI techniques, including Three.js-powered interactive visuals.
+## Overview
 
-The project emphasizes secure authentication, efficient data handling, and seamless frontend-backend integration, making it a production-ready stock analytics solution.
+Stock Analysis Web Application is a full-stack MERN-based platform designed to analyze real-time and historical stock market data through a secure, responsive, and visually engaging interface. The application enables users to visualize stock trends, compare two stocks side-by-side, and explore market performance using optimized APIs and modern UI techniques, including Three.js-powered interactive visuals.
 
-Key Features
+The project focuses on secure authentication, efficient data handling, and seamless frontend-backend integration, making it a production-ready stock analytics dashboard.
 
-• Secure authentication using JWT with encrypted passwords and protected routes
-• Real-time stock price analysis with live market data
-• Historical stock performance visualization
-• Side-by-side stock comparison in a single dashboard
-• Interactive UI components enhanced with Three.js
-• Fully responsive design for desktop and mobile devices
-• Optimized API calls for smooth performance
-• Clean and scalable MERN architecture
+## Features
 
-Technology Stack
+* **Secure Authentication** – JWT-based login & signup with encrypted passwords and protected routes.
+* **Real-Time Stock Analysis** – Displays live stock prices and key market metrics using real-time APIs.
+* **Historical Data Visualization** – Analyze past stock performance with interactive charts.
+* **Stock Comparison Dashboard** – Compare two stocks side-by-side within a single unified view.
+* **Interactive UI Enhancements** – Three.js integration for engaging and dynamic visual components.
+* **Responsive Design** – Optimized for desktop, tablet, and mobile devices.
+* **Optimized Performance** – Efficient API handling and frontend rendering for smooth user experience.
+* **Clean MERN Architecture** – Well-structured frontend-backend integration.
 
-Frontend
-React (Vite), Tailwind CSS, Three.js, Axios, React Router DOM
+## Technology Stack
 
-Backend
-Node.js, Express.js
+| Category        | Technology                          |
+|-----------------|--------------------------------------|
+| Frontend        | React (Core UI)                     |
+| Tooling         | Vite (Build Tool)                   |
+| Styling         | Tailwind CSS                        |
+| 3D Graphics     | Three.js                            |
+| Backend         | Node.js, Express.js                 |
+| Database        | MongoDB (Mongoose ODM)              |
+| Authentication  | JWT, bcrypt.js                      |
+| API Handling    | Axios                               |
 
-Database
-MongoDB with Mongoose ODM
+## Installation
 
-Authentication & Security
-JWT (JSON Web Tokens), bcrypt.js
+Before running the project locally, ensure you have the following installed:
 
-Installation
+* Node.js (LTS)
+* MongoDB (Local or Atlas)
+* Git
 
-Before running the project locally, make sure the following are installed:
+Then follow these steps:
 
-• Node.js (LTS)
-• MongoDB (Local or Atlas)
-• Git
-
-Clone the repository and move into the project directory:
-
+```bash
+# Clone the repository
 git clone https://github.com/Sanjay9176/StockAnalysis-Webpage.git
 cd StockAnalysis-Webpage
-
-
 Backend Setup
-
-Navigate to the server directory and install dependencies:
-
+bash
+Copy code
+# Navigate to backend
 cd server
+
+# Install dependencies
 npm install
+Create a .env file inside the server directory:
 
-
-Create a .env file inside the server folder and add the following variables:
-
+env
+Copy code
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 STOCK_API_KEY=your_stock_api_key
-
-
 Start the backend server:
 
+bash
+Copy code
 npm start
-
-
-Backend runs at:
-http://localhost:5000
+👉 Backend will run at: http://localhost:5000
 
 Frontend Setup
-
-Navigate to the client directory and install dependencies:
-
+bash
+Copy code
+# Navigate to frontend
 cd client
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
-
-
-Frontend runs at:
-http://localhost:5173
+👉 Frontend will run at: http://localhost:5173
 
 How to Run the Project
-
 Start MongoDB (local service or Atlas cluster)
 
 Run the backend server
 
 Run the frontend development server
 
-Register a new user account or login
+Register a new account or login
 
 Search stocks, analyze trends, and compare performance
 
 Authentication Flow
+User passwords are encrypted using bcrypt
 
-• User passwords are encrypted using bcrypt
-• JWT token is generated on successful login
-• Tokens secure protected routes
-• Unauthorized users cannot access private pages
+JWT token is generated on successful login
+
+Tokens protect secured routes
+
+Unauthorized users are restricted from accessing private pages
 
 Stock Comparison Module
+Select any two stocks
 
-• Select any two stocks
-• View both stocks in a side-by-side layout
-• Analyze trends, prices, and performance metrics
-• Designed for clarity and faster decision-making
+View both stocks side-by-side in a single dashboard
+
+Analyze price trends and performance metrics
+
+Designed for clarity and faster decision-making
 
 Future Enhancements
+Technical indicators (RSI, MACD, Moving Averages)
 
-• Technical indicators such as RSI, MACD, and Moving Averages
-• Watchlist and favorites feature
-• Price alerts and notifications
-• AI-based market trend prediction
-• Cloud deployment with CI/CD pipeline
+Watchlist and favorites feature
+
+Stock price alerts and notifications
+
+AI-based market trend prediction
+
+Cloud deployment with CI/CD pipeline
 
 
-Learning Outcomes
+Code
+👉 https://github.com/Sanjay9176/StockAnalysis-Webpage
 
-• Hands-on MERN stack development
-• Secure authentication and authorization
-• Real-time API integration
-• Responsive UI design with Tailwind CSS
-• Practical usage of Three.js in real-world applications
-
-Code Repository
-
-https://github.com/Sanjay9176/StockAnalysis-Webpage
-
-Sanjay Kumar Purohit
-
-Aspiring Full Stack Web Developer
-Chennai, Tamil Nadu, India
+[Sanjay Kumar Purohit]
+markdown
+Copy code
