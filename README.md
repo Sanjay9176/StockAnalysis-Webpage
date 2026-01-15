@@ -120,13 +120,6 @@ AI-based market trend prediction
 
 Cloud deployment and CI/CD pipeline
 
-Preview
-
-(Add screenshots of dashboard, login, stock comparison, and charts here)
-
-<img src="preview1.png" />
-<img src="preview2.png" />
-<img src="preview3.png" />
 
 Learning Outcomes
 
